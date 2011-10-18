@@ -1,0 +1,264 @@
+\chapter{Introduction}
+
+\vspace{-1cm}
+\section{Initial motivation}
+\label{sec:initialMotivation}
+
+Unexplored simplicity. This was the reason for the birth of this work.
+Let me explain. Topology deals with, among other objects, the so
+called {\em 3-manifolds}. A basic type of 3-manifold is a {\em
+closed, connected, oriented 3-manifold} and, in this work, the term
+{\em space} will be used as a synonym for it.\footnote{The term
+``space'' is also used as a synonym for a 3-manifold (any
+3-manifold), but here we will use it as a synonym only for a closed,
+connected, oriented 3-manifold.} In 1994, Kauffman and Lins
+\cite{KauffmanAndLins1994} introduced a new way to present spaces.
+They named their new presentation {\em blinks}. In fact, on their
+work, blinks were appreciated as being a new concise presentation
+for spaces, but its main importance there was its use as an
+intermediate step to convert a {\em blackboard framed link}
+presentation of a space into a {\em 3-gem} presentation of the same
+space. This conversion, among other results, is central to this work,
+but we will get to it later. What I want to say now is what
+attracted me to this object named blink. Here it is.
+\vspace{-0.3cm}
+{\begin{center} \it
+Blink states that a triangle is a space. That a square is a space.
+That any plane graph (\ie any drawing in a plane made of
+points connected by curves that do not intersect) is a space.
+\end{center}}
+\vspace{-0.3cm}
+\noindent What space has the form of a
+triangle? And the form of a square? I found this connection
+between plane graphs and spaces very elegant. This elegance
+becomes even more special when we see that other space
+presentations have more ``complicated'' drawings than
+blink presentation does. For example, the following three
+drawings are different presentations for space $\IS^3\!/\!<3,3,2>$. \footnote{That is, the quotient of the $3$-sphere
+under the action of the binary tetrahedral subgroup, which is a non-abelian group of order 12.}
+\begin{center}
+\includegraphics[width=8cm]{fig/presentations.eps}
+\end{center}
+The first is a blink presentation, the second is a blackboard
+framed link presentation and the third is a 3-gem presentation.
+In this example it is clear that the blink presentation is
+simpler. Its perceptual complexity is smaller. Indeed this is
+always the case. No other space presentation has simpler drawings
+than blink does. Blackboard framed links don't, 3-gems don't.
+{\it special spines} don't, {\it Heegaard diagrams} don't.
+
+This simplicity aspect of blinks allied to the fact that they were
+not studied before, except as a by product on the books
+\cite{KauffmanAndLins1994, Lins1995} made me decide to explore it.
+To see the greatest number of spaces through blink
+drawings was the initial intent, but the hope was also that
+so much elegance and simplicity is not in vain and it could,
+by the fact that it was not explored before, hold
+some yet unknown secret of spaces.
+
+\section{Historical overview}
+\label{sec:historicalOverview}
+
+In 1962 Lickorish \cite{Lickorish1962} revolutionized the area of
+spaces by proving in a purely combinatorial way a result first
+published by Wallace \cite{Wallace1960} two years before by means of
+differential topology. The result has, as a corollary, the following
+fact:
+
+{\em Given any space $M$, there exists a finite number $k$ of
+disjoint solid tori $T_i\subset M$ such that $M \backslash
+\bigcup_{i=1}^k T_i$ is homeomorphic to
+$\IS^3\backslash\bigcup_{i=1}^k T'_i$, for a corresponding set of
+disjoint solid tori $T'_i \subset \IS^3$.}
+
+Another consequence of Lickorish's Theorem permits the
+presentation of an arbitrary space as a link diagram in the plane
+with an integer attached to each one of the components, the so
+called {\em framed links}. The revolution was completed in 1978 when
+Kirby \cite{Kirby1978} published his now famous calculus on framed links.
+This paper spurred an enormous activity in the
+area paving the way to prove deep theorems by a specific kind of
+diagrammatic calculus with well defined rules.
+
+Framed links can be freed from the integers associated to their
+components if one introduces curls in their projections so as to
+have the frame of a component equal to its writhe, thus producing a
+{\em blackboard framed link} or a {\em BFL}. In this way, every
+space presents itself as a blackboard framed link. A reformulation
+of Kirby's calculus into blackboard framed link language is presented
+in \cite{Kauffman1991}: a formal BFL calculus. The importance of the
+BFL presentation is
+testified by the fact that we can obtain from
+it the Witten-Reshetikhin-Turaev quantum invariant (or WRT-invariant) of
+the induced space \cite{Witten1989,ReshetikhinAndTuraev1991}. This is
+not possible, at least it is unknown at the present, from a
+triangulation \cite{Hempel1976}, from a Heegaard diagram
+\cite{Rolfsen1976} or from a {\em special spine} \cite{Matveev2003}
+of the space. In this work the {\em QI} or quantum invariant of a
+space mean their WRT-invariants computed at $A=e^{i\pi/2r}$
+\cite{KauffmanAndLins1994}.
+
+A BFL can be reformulated into the object named {\it blink} also
+introduced in \cite{KauffmanAndLins1994}. The presentation by blink
+is concise and permits, as BFLs does, the computation of best invariants
+available. But how do we prove that two blinks yielding the same
+invariants are manifestations of the same space? Kirby's moves, although a
+theoretical masterpiece, are in this practical context of no use,
+except in very limited circumstances. For this task, the TS-moves
+and U-move on gems of Lins \cite{Lins1995} are much better. The
+applicability of the gem simplifying dynamics is available because
+from a blink it is straightforward to produce a gem inducing the
+same space \cite{KauffmanAndLins1994}. Summarizing, the task of
+classifying blinks has to rely on gem theory which is, at present,
+an indispensable complement to perform the task. The topological
+classification of gems with 30 vertices (extending the classification
+of \cite{Lins1995} using again TS- and U-moves) has been recently
+accomplished~\cite{CasaliCrist2006}.
+
+\newpage
+
+\section{What we did}
+
+In Section~\ref{sec:initialMotivation} we said our intent was to see
+the greatest number of distinct spaces through blinks (\ie blink drawings).
+To be able to accomplish this task, the most important question we must know
+how to answer is whether two blinks $A$ and $B$ are
+actually presentations of the same space. A fact we did
+not mention before is that any space has infinitely
+many distinct blink presentations. So, to answer this question is
+not just checking that $A = B$ or $A \neq B$. The relation
+space-blink is not a one to one relation.
+
+As mentioned in Section~\ref{sec:historicalOverview}, blink is a direct
+reformulation of blackboard framed link (BFL). It is easy to go from a blink
+presentation of a space to a BFL presentation of the same space and
+vice-versa. We also mentioned that a formal calculus for BFLs is well
+known. This
+means that a set of BFL operations or moves is known such that any pair
+of BFLs induce the same space if and only if there
+is a path, \ie a finite sequence of operations or moves in this set, that
+transforms one BFL into the other. So, we could answer our question like
+this: obtain a BFL presentation for $A$, obtain a BFL presentation for
+$B$, then show a path in the BFL calculus transforming $A$ into $B$, proving
+that they induce the same space; or show that such a path does not exist, and
+conclude that they induce different spaces. Although this approach is correct and theoretically
+possible, it is not practical. How to show a proof that a path does not
+exist? Despite of this practical gap, one of the contributions of
+this thesis is a reformulation of the BFL calculus into a purely blink
+calculus.% But this also did not help in answering our practical question.
+
+Section~\ref{sec:historicalOverview} also mentions that from a blink we
+are able to calculate some space invariants. For example, it is possible
+to obtain the homology group or the Witten-Reshetikhin-Turaev
+quantum invariant of its space. Indeed, this is the first thing we do
+to answer whether blink $A$ induces the same space as blink $B$. We
+calculate these two invariants and if any of them are different
+we can answer for sure that the blinks induce different spaces. But,
+if they are both the same, we cannot say their spaces are the same.
+No complete invariant for spaces is known. So, any known space
+invariant may fail to distinguish different spaces.
+
+When the space of blink $A$ is not distinguished from the space
+of blink $B$ by the space invariants, we must use another tool to answer
+our question. This other tool is 3-gem theory. The book
+\cite{KauffmanAndLins1994} shows a way to obtain a 3-gem presentation
+from a blink presentation inducing the same space. We improved this
+algorithm in Chapter~\ref{chap:gems}. In \cite{Lins1995}
+a nice algorithm to simplify 3-gems is presented. So the last thing
+we do to answer our question is to check whether the
+blinks $A$ and $B$ not distinguished by the space invariants have
+their 3-gems simplified to a common 3-gem. If this is the case then
+we are sure that $A$ and $B$ induce the same space. If not, then we
+are not sure. It is a hint that they are different but this cannot
+be said. For small blinks, as we will see later, there are only two
+uncertainties left out of $\approx 500$.
+
+This approach of testing the homology group and the WRT-quantum invariant
+to distinguish blinks and then, if not distinguished,
+applying the 3-gem simplifying algorithm to show that they induce
+the same space was very successful in our experiments as we will
+see in Chapter~\ref{chap:census}. Its only constraint is that
+it works only for small blinks and 3-gems. The computational
+effort to calculate quantum invariants or to simplify 3-gems is exponential
+in the sizes of the blinks and of the 3-gems, respectively.
+
+Let's return to our initial intent: isolating the largest number of
+spaces through blinks. We already know how to test if two (small)
+blinks do induce the same space or not. The next important thing
+to define is for what blinks we are going to ask these questions.
+To try all possible blinks is prohibitive and unnecessary. As we
+will see, we can search for spaces in only a small fraction of all possible
+blinks and yet not lose anything. To get to this optimization
+we first developed a useful decomposition/composition theory
+of blinks in Chapter~\ref{chap:blinks} (actually the theory was developed
+for its combinatorial counterpart: the g-blink). Then, using the
+results and operations of blink calculus and BFL calculus we filtered
+some redundant blinks. This resulted in a small set of blinks for which we
+could identify all spaces. We also could isolate interesting sets
+of small blinks inducing the same spaces such that a path in blink
+calculus or BFL calculus is not trivial to identify. These sets may
+lead to new ideas for theorems or space invariants.
+
+A contribution of this thesis is a computer program named \textsc{Blink}.
+It was responsible for most of the figures in this document. It also
+supports the most important concepts discussed in the following
+chapters and we hope that it will become popular and help researchers and
+students to learn, do research or just appreciate spaces through
+the language of blinks, blackboard framed links or 3-gems which are
+the objects that it supports at the moment.
+
+\section{The structure of this thesis}
+
+In Chapter~\ref{chap:topologyEtc} we begin with a
+review of the basic topological language and concepts needed in the remaining of
+the thesis. We then introduce {\it knots and links} and their diagrams.
+After that we introduce {\it framed links} and
+{\it blackboard framed links} (BFL) and show how they encode spaces.
+A calculus for blackboard framed links is presented.
+
+In Chapter~\ref{chap:blinks} we define the motivating object of this
+work: a {\it blink}. We show that blinks are a simple
+reformulation of blackboard framed links with the advantage of having
+simple drawings. We then reformulate the BFL calculus shown in
+Chapter~\ref{chap:topologyEtc} in blink language. From
+blinks we define a new combinatorial object named {\it g-blinks}. We show
+how to obtain the homology group and quantum invariant of
+Witten-Reshetikhin-Turaev invariants from a g-blink. The code
+of a g-blink is then presented. Then some involutions
+of g-blinks are defined: dual, reflection and refDual. The concept
+of a representative g-blink is introduced based on the previous
+results shown for g-blinks. We end the chapter showing how to
+identify all spaces that are induced by small blinks and what
+is the missing piece to do that: a way to prove homeomorphisms.
+
+In Chapter~\ref{chap:gems} we define 3-gems: another way to present
+spaces. We then show some moves that can be done in
+3-gems without changing the induced space. These moves yields a
+viable computational way to prove homeomorphism of spaces: a
+combinatorial simplification dynamics of 3-gems. To connect blinks
+and 3-gems we show an improved way to obtain, from a blink,
+a 3-gem inducing the same space. We finish this chapter with the
+proof, via 3-gems, of a theorem on g-blinks stated in
+Chapter~\ref{chap:blinks}: the partial reflection theorem.
+
+In Chapter~\ref{chap:census} we present the computational
+experiments and results that we have obtained. We define formally
+what we are searching: a census of prime spaces. Then we construct
+a small set named $U$ that has the {\it 9-prime-unavoidable} property.
+We then show how we topologically identified the spaces of every
+g-blink in $U$. We finish the chapter exploring another set of
+g-blinks: simple 3-connected monochromatic blinks.
+
+In Chapter~\ref{chap:conclusion} we review the main contributions
+of this work, talk a little about the program \textsc{Blink} and
+about a theoretical contribution that we did not finish on
+time to this thesis: a polynomial algorithm to obtain the blink
+of a 3-gem. Some research problems that can be explored as a
+continuation of this work are also shown.
+
+
+
+
+
+
+

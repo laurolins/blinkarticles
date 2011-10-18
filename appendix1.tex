@@ -1,0 +1,97 @@
+\chapter{The 487 potentially prime spaces in $U$}
+\label{chap:primeCatalogue}
+
+We here present the 487 spaces that are ``potentially prime'' once we could
+not prove them composite in our tests. One thing is certain, as stated in
+Theorem~\ref{theo:primeSpacesUpTo9Edges}: any prime space that can be
+presented as a blink with $\leq$ 9 edges induces the same space (modulo
+orientation) as one and only one of these 487 spaces. Actually there
+are two points where this last statement may fail: space 9.126 and space 9.199 (although
+they have the same HGnQI we could not find a proof of homeomorphism
+between g-blink $U[1563]$ and the other g-blinks in 9.126 and g-blink $U[2165]$
+and the others in 9.199). All 3437 g-blinks in $U$ appears in this Appendix or
+in Appendix~\ref{chap:compositeCatalogue}.
+
+\begin{figure}[htp]
+   \begin{center}
+      \leavevmode
+      \includegraphics[width=14.5cm]{fig/catalogueExplanation.eps}
+   \end{center}
+   \vspace{-0.7cm}
+   \caption{ Elements of catalogue}
+   \label{fig:catalogueExplanation}
+\end{figure}
+
+The elements of this catalogue are: (1) the space name: $6_7$ is
+a synonym for $6.7$; (2) the primality test outcome; (3) the homology
+group; (4) the number of g-blinks in $U$ that induces this space; (5) number
+of 3-gems identified in the same ts-class of the minimum 3-gem
+found for this space: {\it full} means that all ts-class
+was identified, {\it partial} means that we do not know if
+all ts-class was identified; (6) the minimum blink
+presentation for this space in set $U$ and also a
+minimal presentation for this space (this is always true,
+except for class $6.5$ that should be $0.1$); (7) the name
+of the g-blink in $U$; (8) its number of edges; (9) its number
+of blocks in the blink presentation (2-connected components);
+(10) its orientation compared to the orientation of the QI shown:
++ sign means the same and - sign means different; (11) the
+corresponding BFL presentation; (12) other g-blinks in the
+same space; (13) the code of the minimal 3-gem found for
+this space the code convention is defined in \cite{Lins1995};
+ (14) the number of handles (composition with
+$\IS^2 \times \IS^1$ and the number of vertices of this 3-gem); (15)
+the quantum invariant of this space in polar form where the
+angle is divided by $\pi$; (16) the name of this minimal
+3-gem in the catalogue of \cite{Lins1995} when it is present
+in this catalogue.
+
+The spaces that have integral quantum invariants up to level 12 are:
+6.5 $(\IS^2 \times \IS^1)$, 6.8, 6.18 and 8.32. The spaces that have real but not integral
+quantum invariant up to level 12 are 1.1, 2.1, 4.4, 6.14, 6.19, 8.58,
+8.70, 8.75, 8.76, 8.81, 8.86, 8.87, 8.89, 8.100, 8.102, 8.103, 8.117,
+9.23, 9.183. The remaining classes have entries with non-zero imaginary
+part (\ie $\theta/\pi \notin \{0, 1\}$).
+
+
+
+
+
+
+
+\newcount\ii \newcount\jj   % declare integer variable
+\def\producePages#1#2{
+\ii=#1                      % initialize ii
+\jj=#2                      % initialize jj
+\advance\jj by 1            % increment jj
+\loop   % loop
+   \ifnum\ii<\jj
+{
+   %\vspace{-1cm}
+   %\thispagestyle{empty}
+   % \setlength{\hoffset}{0cm}
+   % \setlength{\textwidth}{\paperwidth-2cm}
+   \hspace{-1.8cm}
+   \enlargethispage{5cm}
+   {\centering
+   \includegraphics[width=18cm]{fig/catalog\ifnum\ii<100 0\fi\ifnum\ii<10 0\fi\number\ii.eps}
+   }
+   \newpage}
+      \advance\ii by 1
+   \repeat
+}
+
+\newpage
+\setlength{\topmargin}{-1.2cm}
+%\setlength{\textwidth}{\paperwidth-2in}
+%\setlength{\headheight}{1cm}
+%\setlength{\headsep}{-3cm}
+%\setlength{\footskip}{0.1cm}
+%\setlength{\textheight}{\paperheight-\headheight-\headsep-\footskip-2in}
+%\setlength{\oddsidemargin}{0mm}
+%\setlength{\evensidemargin}{0mm}
+%\setlength{\marginparwidth}{0mm}
+%\setlength{\marginparsep}{0mm}
+%\setlength{\textwidth}{\paperwidth-2in}
+
+\producePages{1}{101}

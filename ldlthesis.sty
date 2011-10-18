@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Theorem %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+\theoremstyle{definition}
+\newtheorem{Def}{\@defname}[section]
+\theoremstyle{theo}
+\newtheorem{Axi}[Def]{\@axiomname}
+\newtheorem{Conj}[Def]{\@conjecturename}
+\newtheorem{Lem}[Def]{\@lemmaname}
+\newtheorem{Theo}[Def]{\@theoname}
+\newtheorem{Prop}[Def]{\@propname}
+\newtheorem{Cor}[Def]{\@corname}
+
+
+%\def\@xthm#1#2{\@begintheorem{#2}{\csname the#1\endcsname}{}\ignorespaces}
+%\def\@ythm#1#2[#3]{\@opargbegintheorem{#2}{\csname the#1\endcsname}{#3}\ignorespaces}
+%\def\@opargbegintheorem#1#2#3{\trivlist
+%      \item[\hskip \labelsep{\bfseries(#2)\ #1\ (#3).}]\itshape}
+%%%
+%%\let\Algorithmfont\upshape
+%%\let\Answerfont\upshape
+%%\let\Assertionfont\upshape
+%%\let\Assumptionfont\upshape
+%%\let\Casefont\upshape
+%%\let\Commentfont\upshape
+%%\let\Conditionfont\upshape
+%%\let\Conventionfont\upshape
+%%\let\Criterionfont\upshape
+%%\let\Definitionfont\upshape
+%%\let\Notationfont\upshape
+%%\let\Notefont\upshape
+%%\let\Remarkfont\upshape
+%%\let\Examplefont\upshape
+%%\let\Propfont\upshape
+%%\let\Observationfont\upshape
+%%\let\Solutionfont\upshape
+%%\let\Stepfont\upshape
+%%\let\Summaryfont\upshape
+%%\let\Claimfont\itshape
+%%\let\Conjecturefont\itshape
+%%\let\Corollaryfont\itshape
+%%\let\Lemmafont\itshape
+%%\let\Theoremfont\itshape
+%%\let\Problemfont\itshape
+%%\let\Propositionfont\itshape
+%%\let\Questionfont\itshape
+%%%
+%%\let\Algorithmheadfont\bfseries
+%%\let\Answerheadfont\bfseries
+%%\let\Assertionheadfont\bfseries
+%%\let\Assumptionheadfont\bfseries
+%%\let\Caseheadfont\bfseries
+%%\let\Claimheadfont\bfseries
+%%\let\Commentheadfont\bfseries
+%%\let\Conditionheadfont\bfseries
+%%\let\Conjectureheadfont\bfseries
+%%\let\Conventionheadfont\bfseries
+%%\let\Corollaryheadfont\bfseries
+%%\let\Criterionheadfont\bfseries
+%%\let\Definitionheadfont\bfseries
+%%\let\Exampleheadfont\bfseries
+%%\let\Lemmaheadfont\bfseries
+%%\let\Notationheadfont\bfseries
+%%\let\Noteheadfont\bfseries
+%%\let\Observationheadfont\bfseries
+%%\let\Problemheadfont\bfseries
+%%\let\Propheadfont\bfseries
+%%\let\Propositionheadfont\bfseries
+%%\let\Questionheadfont\bfseries
+%%\let\Remarkheadfont\bfseries
+%%\let\Solutionheadfont\bfseries
+%%\let\Stepheadfont\bfseries
+%%\let\Summaryheadfont\bfseries
+%%\let\Theoremheadfont\bfseries
+%%
+%\def\@begintheorem#1#2#3{\par\addvspace{8pt plus3pt minus2pt}%
+%              \noindent{\csname#1headfont\endcsname\ignorespaces(#2)\ #1.}%
+%              \csname#1font\endcsname\hskip.4em\ignorespaces}
+%\def\@endtheorem{\par\addvspace{8pt plus3pt minus2pt}\@endparenv}
+%%
+%%%\newtheorem{theorem}{Theorem}[section]
+%%%\newtheorem{algorithm}[theorem]{Algorithm}
+%%%%   \newtheorem{answer}[theorem]{Answer}
+%%%\newtheorem{assertion}[theorem]{Assertion}
+%%%\newtheorem{assumption}[theorem]{Assumption}
+%%%%   \newtheorem{case}[theorem]{Case}
+%%%\newtheorem{claim}[theorem]{Claim}
+%%%%   \newtheorem{comment}[theorem]{Comment}
+%%%%   \newtheorem{condition}[theorem]{Condition}
+%%%\newtheorem{conjecture}[theorem]{Conjecture}
+%%%\newtheorem{convention}[theorem]{Convention}
+%%%\newtheorem{corollary}[theorem]{Corollary}
+%%%\newtheorem{criterion}[theorem]{Criterion}
+%%%\newtheorem{definition}[theorem]{Definition}
+%%%\newtheorem{example}[theorem]{Example}
+%%%\newtheorem{lemma}[theorem]{Lemma}
+%%%\newtheorem{notation}[theorem]{Notation}
+%%%%   \newtheorem{note}[theorem]{Note}
+%%%\newtheorem{observation}[theorem]{Observation}
+%%%\newtheorem{problem}[theorem]{Problem}
+%%%\newtheorem{prop}[theorem]{Prop}
+%%%\newtheorem{proposition}[theorem]{Proposition}
+%%%\newtheorem{question}[theorem]{Question}
+%%%\newtheorem{remark}[theorem]{Remark}
+%%%%   \newtheorem{solution}[theorem]{Solution}
+%%%%   \newtheorem{step}[theorem]{Step}
+%%%%   \newtheorem{summary}[theorem]{Summary}
+%%%
+%%\newenvironment{answer}[1][Answer]{\begin{trivlist}
+%%\item[\hskip \labelsep {\bfseries #1.}]}{\end{trivlist}}
+%%%
+%%\newenvironment{case}[1][Case]{\begin{trivlist}
+%%\item[\hskip \labelsep {\bfseries #1.}]}{\end{trivlist}}
+%%%
+%%\newenvironment{comment}[1][Comment]{\begin{trivlist}
+%%\item[\hskip \labelsep {\bfseries #1.}]}{\end{trivlist}}
+%%%
+%%\newenvironment{note}[1][Note]{\begin{trivlist}
+%%\item[\hskip \labelsep {\bfseries #1.}]}{\end{trivlist}}
+%%%
+%%\newenvironment{solution}[1][Solution]{\begin{trivlist}
+%%\item[\hskip \labelsep {\bfseries #1.}]}{\end{trivlist}}
+%%%
+%%\newenvironment{step}[1][Step]{\begin{trivlist}
+%%\item[\hskip \labelsep {\bfseries #1.}]}{\end{trivlist}}
+%%%
+%%\newenvironment{summary}[1][Summary]{\begin{trivlist}
+%%\item[\hskip \labelsep {\bfseries #1.}]}{\end{trivlist}}
+%%%
+%%\newif\if@halmos
+%%\@halmostrue \font\msa=msam10 at 10pt
+%%\def\halmos{\par
+%%    \vskip-\baselineskip
+%%    \hbox to \hsize{\hfill\hskip1.5pc\msa\char'003}\global\@halmosfalse}
+%%
+%%\newenvironment{proof}{%
+%% \par\addvspace{6pt plus3pt minus2pt}%
+%% \noindent{\bfseries\itshape Proof.}\hskip1pc\ignorespaces}{%
+%%  \if@halmos\halmos\fi
+%%  \par\addvspace{6pt plus3pt minus2pt}\@endparenv\global\@halmostrue}
+%%
+%%\setlength\arraycolsep{1.5pt} \setlength\tabcolsep{6\p@}
+%%\setlength\arrayrulewidth{.4\p@} \setlength\doublerulesep{2\p@}
+%%\setlength\tabbingsep{\labelsep} \skip\@mpfootins = \skip\footins
+%%\setlength\fboxsep{3\p@} \setlength\fboxrule{.4\p@}
+%%
+%%\@addtoreset{equation}{chapter}
+%%\renewcommand\theequation{\thechapter.\@arabic\c@equation} %(1.1)
+%%\renewcommand\theequation{\@arabic\c@equation} %(1)
+%%
+%%
+%%\renewcommand\footnoterule{}  %comment this defition to have footnote rule
+%%\renewcommand\thefootnote{\fnsymbol{footnote}}
+%%\renewcommand\thefootnote{\arabic{footnote}}
+%%\@addtoreset{footnote}{chapter}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
