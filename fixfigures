@@ -1,0 +1,53 @@
+inputfile=$1
+outputfile=$2
+
+tmpfilein=/tmp/x
+tmpfileout=/tmp/y
+
+cp $inputfile $tmpfilein
+
+sed 's/\\includegraphics\[\(.*\)\]{\(.*\)}/\\psfig{file=\2,\1}/' $tmpfilein > $tmpfileout
+mv $tmpfileout $tmpfilein
+
+sed 's/\\includegraphics{\(.*\)}/\\psfig{file=\1}/'              $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\begin{Prop}/\\begin{proposition}/'                      $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\begin{Lem}/\\begin{lemma}/'                             $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\begin{Theo}/\\begin{theorem}/'                          $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\end{Prop}/\\end{proposition}/'                          $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\begin{proposicao}/\\begin{proposition}/'                $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\end{proposicao}/\\end{proposition}/'                    $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\end{Lem}/\\end{lemma}/'                                 $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\end{Theo}/\\end{theorem}/'                              $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\end{Conj}/\\end{conjecture}/'                           $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\begin{Conj}/\\begin{conjecture}/'                       $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+sed 's/\\color{red}/\\bf/'                                       $tmpfilein > $tmpfileout 
+mv $tmpfileout $tmpfilein
+
+cp $tmpfilein $outputfile
+
+
+#sed 's/A/B/
+#\\psfig{file=\2,\1}
+#find . | grep chapter | xargs -I {} -t ./fixfigures {} {}

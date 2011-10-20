@@ -1,0 +1,70 @@
+\chapter[\btex ing Using the WSPC {\bib}Style]{\btex ing\\[.5ex] Using the \\[.5ex] WSPC {\bib}Style\label{ch2}}
+
+\section{\btex{} Database Entries}
+
+\begin{center}
+\tablefont
+\begin{tabular}{@{}ll@{}}\toprule
+\multicolumn{1}{c}{\btex}\\
+\multicolumn{1}{c}{Database}  & \multicolumn{1}{c}{Sample citation}\\
+\multicolumn{1}{c}{entry type}\\\colrule
+
+article & \citep{best03,pier02}\\
+
+proceedings & \cite{weis94}\\
+
+inproceedings & \cite{gupt97}\\
+
+book & \cite{rich60,jarl88}\\
+
+edition & \cite{chur90}\\
+
+editor & \cite{benh93}\\
+
+series & \cite{bake72}\\
+
+tech report & \cite{hobb92} and \cite{bria84}\\
+
+unpublished & \cite{hear94}\\
+
+phd thesis & \cite{brow88}\\
+
+masters thesis & \cite{lodh74}\\
+
+incollection & \cite{dani73}\\
+
+misc & \cite{davi93}\\
+
+manual & \cite{cheo04}\\
+\botrule
+\end{tabular}
+\end{center}
+
+\section{\btex}\index{\btex}
+If you use the \btex\ program to maintain your bibliography, you do
+not use the \verb|thebibliography| environment. Instead, you should
+include the lines
+
+\begin{verbatim}
+   \bibliographystyle{ws-book-har}
+   \bibliography{ws-book-sample}
+\end{verbatim}
+
+\noindent where \verb|ws-book-har| refers to a file
+\verb|ws-book-har.bst|, which defines how your references will look.
+
+The argument to \verb|\bibliography| refers to the file \verb|ws-book-sample.bib|,
+which should contain your database in \btex\ format. Only the
+entries referred to via \verb|\cite| will be listed in the
+bibliography.
+
+To complete the job, compile your file as follows:
+
+\begin{enumerate}[(6)]
+\item \verb|latex ws-book975x65|
+\item \verb|latex ws-book975x65|
+\item \verb|bibtex ws-book975x65|
+\item \verb|makeindex ws-book975x65|
+\item \verb|latex ws-book975x65|
+\item \verb|latex ws-book975x65|
+\end{enumerate}

@@ -9,15 +9,15 @@
 #	wc	 word count
 # --------------------------------------------------------------------
 
-NAME := main
-BIBFILES := references.bib
+NAME := book
+BIBFILES := book.bib
 
 DISTILLER := ps2pdf
 
 # --------------------------------------------------------------------
 
 SHELL := bash
-LATEX := pdflatex
+LATEX := latex
 BIBTEX := bibtex -min-crossrefs=100 # avoid separating out crossrefs
 DETEX := detex -n
 LACHECK := lacheck
@@ -40,6 +40,10 @@ $(NAME).pdf: $(NAME).tex $(BIBFILES)
 	$(LATEX) $(NAME).tex
 	@echo '-------------------- latex #3 --------------------'
 	$(LATEX) $(NAME).tex
+
+pdf:
+	dvips $(NAME).dvi
+	pstopdf $(NAME).ps
 
 # 1. converter png's para pdf com o colorspace CMYK
 # 2. renomear para so .pdf (o tex nao gostou de .png.pdf)
@@ -66,7 +70,7 @@ wc:
 	@$(DETEX) $(NAME).tex | $(WC)
 
 clean:
-	$(RM) *.{blg,dvi,dw,ilg,log,o,tmp,lbl,aux,bbl,idx,ind,toc,lof,lot,brf} paper.pdf
+	$(RM) *.{blg,dvi,dw,ilg,log,o,tmp,lbl,aux,bbl,idx,ind,toc,lof,lot,brf} book.pdf
 
 clobber: clean
 	$(RM) *~ \#* core

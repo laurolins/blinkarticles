@@ -1,0 +1,74 @@
+\chapter{Indexing\label{ch3}}
+
+\section{Indexing}\index{index}
+The first step in producing the index is to put the necessary
+\verb|\index| commands in your document. The following example shows
+some simple \verb|\index| commands and the index entries that they
+produce.
+
+\begin{table}[h]
+\begin{tabular}{ll|l}
+Page ii:   & \verb|\index{Alpha}              | &  Alpha, ii           \\
+Page viii: & \verb|\index{alpha}              | &  alpha, viii, ix, 22 \\
+Page ix:   & \verb|\index{alpha}              | &  bites               \\
+Page 7:    & \verb|\index{gnat!size of}       | &  \sitem animal       \\
+Page 8:    & \verb|\index{bites!animal!gnats} | &  \ssitem gnats, 8, 10\\
+Page 10:   & \verb|\index{bites!animal!gnats} | &  \ssitem gnus, 10    \\
+Page 10:   & \verb|\index{bites!animal!gnus}  | &  \sitem vegetable, 12\\
+Page 12:   & \verb|\index{bites!vegetable}    | &  gnat, 32            \\
+Page 22:   & \verb|\index{alpha}              | &  \sitem anatomy, 35  \\
+Page 32:   & \verb|\index{gnat}               | &  \sitem size of, 7   \\
+Page 35:   & \verb|\index{gnat!anatomy}       | &  gnus                \\
+           & \verb|\index{gnus!good}          | &  \sitem bad, 38      \\
+Page 38:   & \verb|\index{gnus!bad}           | &  \sitem good, 35
+\end{tabular}
+\end{table}
+
+You then run \LaTeX\ on your entire document, causing it to generate
+the file {\tt ws-book975x65.idx}. Next, run the \verb|MakeIndex|
+program by typing the command, \verb|makeindex ws-book975x65|. This
+produces the file \verb|ws-book975x65.ind|. If \verb|MakeIndex|
+generated no error messages, you can now rerun \LaTeX\ on your
+document and the index will appear.
+
+Reading the index, you may discover mistakes, which
+should be corrected by changing the appropriate \verb|\index|
+commands in the document and regenerating the {\tt ind} file.  If
+there are problems that cannot be corrected in this way, you can
+edit the {\tt ind} file directly.  However, such editing is
+to be avoided because it must be repeated every time you generate a
+new version of the index.
+
+If you would like to have ``general'' and ``author'' indexes
+separately, please see \sref{sec3.1}. For more details on index
+generation, see \cite{lamp87}.
+
+\section{Multiple Indexes}\label{sec3.1}\index{index!multiple indexes}
+
+To create a ``general'' and an ``author'' index, include the following lines:
+
+\begin{verbatim}
+...
+\usepackage{ws-multind}
+\makeindex{general}
+\makeindex{authors}
+...
+\index{authors}{Fairbairns, R.} %\aindx{Fairbairns, R.}
+...
+\index{general}{FAQs}           %\gindx{FAQ}
+...
+\printindex{general}{GENERAL INDEX}
+\printindex{authors}{AUTHOR INDEX}
+\end{verbatim}
+
+To complete the job, compile your file as follows:
+
+\begin{enumerate}[(4)]
+\item latex ws-book975x65
+\item latex ws-book975x65
+\item bibtex ws-book975x65\qquad(for bibtex users)
+\item makeindex general
+\item makeindex authors
+\item latex ws-book975x65
+\item latex ws-book975x65
+\end{enumerate}

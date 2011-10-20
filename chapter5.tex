@@ -17,12 +17,12 @@ $\,\,\leq k \,\,$ edges are there. Even though, for any fixed $k \geq
 even smaller set and not lose any space. This may be done if we
 believe in the following reasonable conjecture.
 
-\begin{Conj} \label{conj:noCompositeHasFewerEdgesThanItsMinimalPrimeSum}
+\begin{conjecture} \label{conj:noCompositeHasFewerEdgesThanItsMinimalPrimeSum}
 Let a space $S$ be the connected sum of prime spaces $A$ and $B$.
 If the minimal blink presentations for $A$ and $B$ have respectively $n_A$ and
 $n_B$ edges, then $n_S$, the number of edges for the minimal blink presentation
 of $S$, satisfies  $n_S = n_A + n_B$.
-\end{Conj}
+\end{conjecture}
 
 A {\it minimal blink for a space} is a blink that
 has the same number of edges or fewer edges than any other blink
@@ -45,13 +45,13 @@ possibility that remains to the conjecture to be false is
 a blink presentation with less than $n$ components. On the other
 hand we have,
 
-\begin{Prop} \label{prop:primeIsSufficient}
+\begin{proposition} \label{prop:primeIsSufficient}
 If Conjecture~\ref{conj:noCompositeHasFewerEdgesThanItsMinimalPrimeSum} is true
 then, knowing one minimal blink for each prime space that has a blink presentation
 with $\leq k$ edges, it is possible to exhibit a minimal blink
 for all spaces (composite or prime) that have a blink presentation with
 $\leq k$ edges.
-\end{Prop}
+\end{proposition}
 \begin{proof}
 If $S$ is a prime space that has a blink with fewer than $k$ edges then,
 by hypothesis, we already know one minimal blink for it. If $S$ is composite,
@@ -128,7 +128,7 @@ and (4) \textsc{Filtering}.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=12cm]{fig/unavoidableSetPipeline.eps}
+      \psfig{file=fig/unavoidableSetPipeline.eps,width=12cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Pipeline of the \kpu set generation for $k=4$}
@@ -156,7 +156,7 @@ have breakpairs.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=12cm]{fig/blockGeneration.eps}
+      \psfig{file=fig/blockGeneration.eps,width=12cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Block generation}
@@ -211,7 +211,7 @@ g-blink with fewer g-edges.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=12cm]{fig/unnecessaryGBlinkStructure.eps}
+      \psfig{file=fig/unnecessaryGBlinkStructure.eps,width=12cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{ Structures to identify g-blinks that may be discarded}
@@ -261,23 +261,26 @@ g-blinks resulting from the \textsc{Coloring} step. Let $B$ be this
 input set and $R = \{\}$, initially empty, be the result set.
 The filtering algorithm flows like this:
 
-{\setstretch{1.25}
-\begin{center}
-\hbox{
-\parbox{15cm}{
-\begin{small}
-\begin{algorithmic}[1]
- \While{$B$ \, is not empty}
-    \State $G \leftarrow$ an element of $B$
-    \State $RM3 \leftarrow$ closure of $G$ by Reidemeiter III Move
-    \If{no element of $RM3$ may be discarded by rules 2 to 6 of the \textsc{Coloring} step}
-       \State $R \leftarrow R \cup \{G\}$
-    \EndIf
-    \State $B \leftarrow B \backslash RM3$
- \EndWhile
-\end{algorithmic}
-\end{small}}}\end{center}
-}
+%% {\setstretch{1.25}
+%% \begin{center}
+%% \hbox{
+%% \parbox{15cm}{
+%% \begin{small}
+%% \begin{algorithmic}[1]
+%%  \While{$B$ \, is not empty}
+%%     \State $G \leftarrow$ an element of $B$
+%%     \State $RM3 \leftarrow$ closure of $G$ by Reidemeiter III Move
+%%     \If{no element of $RM3$ may be discarded by rules 2 to 6 of the \textsc{Coloring} step}
+%%        \State $R \leftarrow R \cup \{G\}$
+%%     \EndIf
+%%     \State $B \leftarrow B \backslash RM3$
+%%  \EndWhile
+%% \end{algorithmic}
+%% \end{small}}}\end{center}
+%% }
+
+\TODO{Bring back RM3 algorithm}
+
 The idea of this step is to use the Reidemeister III move, that preserves
 the number of crossings and the space, to find some blink version of the
 space that may be simplified by the rules 2 to 6 explained on the
@@ -364,7 +367,7 @@ these 3 cases.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=15cm]{fig/qiFailure.eps}
+      \psfig{file=fig/qiFailure.eps,width=15cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{ The 3 cases in $U$ where HG helped QI to distinguish spaces}
@@ -488,19 +491,23 @@ this case we used 3-gems modulo orientation. In other words, the 3-gem we
 associated to each g-blink could be exactly the same space, or the same
 space with orientation changed. As it might be clear now, this is enough
 here: spaces modulo orientation.
-\begin{algorithm}
-\caption{Algorithms for 3-Gems}
-\label{alg:algorithmFor3Gems}
-\smallskip
-\begin{tabular}{c|c}
-\begin{tabular}{c}
-\GemOfGBlink\\[2.9cm] \hline
-\\[-0.05cm]
-\SimplifyGem
-\end{tabular} &
-\SearchInTSClass
-\end{tabular}
-\end{algorithm}
+
+
+%% \begin{algorithm}
+%% \caption{Algorithms for 3-Gems}
+%% \label{alg:algorithmFor3Gems}
+%% \smallskip
+%% \begin{tabular}{c|c}
+%% \begin{tabular}{c}
+%% \GemOfGBlink\\[2.9cm] \hline
+%% \\[-0.05cm]
+%% \SimplifyGem
+%% \end{tabular} &
+%% \SearchInTSClass
+%% \end{tabular}
+%% \end{algorithm}
+
+\TODO{Bring back algorithm SearchInTSClass}
 
 The remaining challenge at this point was to find whether these 999
 3-gems, seen as nodes of a graph, could be connected in 501
@@ -527,7 +534,7 @@ HGnQI classes we could not find a single connected component.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=15cm]{fig/subgraphs.eps}
+      \psfig{file=fig/subgraphs.eps,width=15cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Graphs of g-blinks (red nodes) and gems (yellow nodes). The first two are trees
@@ -548,7 +555,7 @@ different 3-gems were generated before all g-blinks were connected.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=16cm]{fig/doubts.eps}
+      \psfig{file=fig/doubts.eps,width=16cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{ The only 2 classes with same HGnQI where a proof of the homeomorphism was not found}
@@ -574,15 +581,15 @@ two cases and we just could not find them or are these the only
 weak points of the HGnQI invariant on the set $U$? We leave
 this question open and register it as the following conjectures.
 
-\begin{Conj} \label{conj:conjecture1}
+\begin{conjecture} \label{conj:conjecture1}
 The spaces induced by all 5 blinks or BFLs on Figure~\ref{fig:doubts}A
 are the same.
-\end{Conj}
+\end{conjecture}
 
-\begin{Conj} \label{conj:conjecture2}
+\begin{conjecture} \label{conj:conjecture2}
 The spaces induced by all 3 blinks or BFLs on Figure~\ref{fig:doubts}B
 are the same.
-\end{Conj}
+\end{conjecture}
 
 The only reason we conjecture these stems from the fact that
 HGnQI have not failed in all other 499 cases. But,
@@ -631,7 +638,7 @@ classes that we do not know whether they induce a single space or two spaces are
 \begin{figure}[h!tp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=16cm]{fig/compositeSpaces.eps}
+      \psfig{file=fig/compositeSpaces.eps,width=16cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{ The 14 composite spaces in $U$}
@@ -660,7 +667,7 @@ to 6.18, but we do not do this.
 \begin{figure}[h!tp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=14cm]{fig/gblinksForS1xS2inU.eps}
+      \psfig{file=fig/gblinksForS1xS2inU.eps,width=14cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{ Blink and BFL presentations for g-blinks in 6.5: space $\IS^2 \times \IS^1$}
@@ -668,14 +675,14 @@ to 6.18, but we do not do this.
 \end{figure}
 
 
-\begin{Theo}
+\begin{theorem}
 \label{theo:primeSpacesUpTo9Edges}
 Any prime space that has a blink presentation with $\leq$ 9 edges induces the
 same space (modulo orientation) as one and only one of the 487 blinks in
 Figure~\ref{fig:primeSpace487Representatives} or the 487 BFLs in
 Figure~\ref{fig:primeSpace487RepresentativeLinks} or the 487 spaces shown
 in Appendix~\ref{chap:primeCatalogue}.
-\end{Theo}
+\end{theorem}
 
 \enlargethispage{2cm}
 
@@ -695,8 +702,8 @@ that there are only 487 (with 2 doubts) is in the program \textsc{Blink}.
 \begin{figure}[h!tp]
    \begin{center}
       \leavevmode
-      %\includegraphics[width=14.5cm]{fig/primeSpace487Representants.eps}
-      \includegraphics[width=15cm]{fig/primeSpace487Representants.eps}
+      %\psfig{file=fig/primeSpace487Representants.eps,width=14.5cm}
+      \psfig{file=fig/primeSpace487Representants.eps,width=15cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{ List of 487 blinks that induce once any prime space (modulo orientation)
@@ -709,7 +716,7 @@ that there are only 487 (with 2 doubts) is in the program \textsc{Blink}.
 \begin{figure}[h!tp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=15cm]{fig/primeSpace487RepresentantLinks.eps}
+      \psfig{file=fig/primeSpace487RepresentantLinks.eps,width=15cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{ List of 487 BFLs that induce once any prime space (modulo orientation)
@@ -754,7 +761,7 @@ might mean something on spaces.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics{fig/nonTrivialGreenBlocks.eps}
+      \psfig{file=fig/nonTrivialGreenBlocks.eps}
    \end{center}
    \vspace{-0.7cm}
    \caption{ Non-trivial pair of green blocks (2-connected blinks) inducing the same space}
@@ -805,7 +812,7 @@ are shown in Figure~\ref{fig:doubts3ConnectedIsolated}.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics{fig/doubts3ConnectedIsolated.eps}
+      \psfig{file=fig/doubts3ConnectedIsolated.eps}
    \end{center}
    \vspace{-0.7cm}
    \caption{ Doubts on simple 3-connected all green blinks}

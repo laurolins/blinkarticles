@@ -10,7 +10,7 @@ to build a new object from a blackboard framed link.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=12.5cm]{fig/BFL2Blink.eps}\\
+      \psfig{file=fig/BFL2Blink.eps,width=12.5cm}\\
    \end{center}
    \vspace{-0.7cm}
   \caption{Procedure \textsc{BFL2Blink}}
@@ -67,7 +67,7 @@ blink on Figure~{\ref{fig:BFL2Blink}F} are associated.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=9cm]{fig/BlinksPlaneIsotopy.eps}
+      \psfig{file=fig/BlinksPlaneIsotopy.eps,width=9cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Blinks}
@@ -96,11 +96,11 @@ whole class) induces only one space. This allows us to define the
 {\it space of a blink} (the whole class) as the space induced by the
 associated BFL.
 
-\begin{Prop}
+\begin{proposition}
 \label{prop:BFLinduceSameSpaceIfPlaneIsotopy} If there is a plane
 isotopy between two blackboard framed links then they induce the
 same space.
-\end{Prop}
+\end{proposition}
 \begin{proof}
 Every element involved in the space construction from a BFL is preserved
 under plane isotopy.
@@ -151,16 +151,16 @@ of blink moves named ${\cal B}$. Two blinks induce the same space if
 and only if there is a finite sequence of moves in ${\mathcal B}$
 transforming one blink into the other. The main result of this
 section is the following Theorem:
-\begin{Theo} \label{theo:blinkCalculus} Two blinks induce the same space if and only if they
+\begin{theorem} \label{theo:blinkCalculus} Two blinks induce the same space if and only if they
 are connected by a finite sequence of moves, where each one of them
 is one of the ones displayed in Figure
 \ref{fig:blinkCalculusOnCoins}, or its red/green twin.
-\end{Theo}
+\end{theorem}
 
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=10cm]{fig/blinkCalculusOnCoins.eps}
+      \psfig{file=fig/blinkCalculusOnCoins.eps,width=10cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Blink formal calculus by local coins replacements}
@@ -207,38 +207,38 @@ For $n >1$, $\mu_n$ is defined by Figure \ref{fig:mun}.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=10cm]{fig/mun.eps}
+      \psfig{file=fig/mun.eps,width=10cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Definition of $\mu_n$, $n \geq 2$.}
    \label{fig:mun}
 \end{figure}
 
-\begin{Lem} \label {lem:heartSmoothing}  The heart-shape smoothing
+\begin{lemma} \label {lem:heartSmoothing}  The heart-shape smoothing
 move depicted below is obtained regular isotopies, and a single
 ribbon move.
 \begin{center}
-\includegraphics[width=6cm]{fig/heartSmoothing.eps}
+\psfig{file=fig/heartSmoothing.eps,width=6cm}
 \end{center}
-\end{Lem}
+\end{lemma}
 \begin{proof}Follow the proof in the figure below. The ribbon move
 is used in the second configuration to prepare for the application
 of Whitney´s trick. After this is done we obtain the third
 configuration. All other moves are regular isotopies.
 \begin{center}
-\includegraphics[width=12cm]{fig/heartSmoothingProof.eps}
+\psfig{file=fig/heartSmoothingProof.eps,width=12cm}
 \end{center}
 \vspace{-0.8cm}
 \end{proof}
 
-\begin{Lem} The move $\mu_n$ does not change the induced space.
-\end{Lem}
+\begin{lemma} The move $\mu_n$ does not change the induced space.
+\end{lemma}
 \begin{proof} The proof is done for a class of moves that
 generalizes $\mu_n$, depicted in Fig. \ref{fig:muNproof}.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=9cm]{fig/MuNproof.eps}
+      \psfig{file=fig/MuNproof.eps,width=9cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Moves that generalize $\mu_n$.}
@@ -262,10 +262,10 @@ passage is a consequence of the heart-smoothing move of Lemma
 \ref{lem:heartSmoothing}
 \end{proof}
 
-\begin{Lem} $\mu_1, \mu_2, \mu_3, \ldots \Rightarrow \alpha_n$ for all $n\geq 1$. In words:
+\begin{lemma} $\mu_1, \mu_2, \mu_3, \ldots \Rightarrow \alpha_n$ for all $n\geq 1$. In words:
 if you have the infinite sequence of moves $\mu_1,\mu_2,\ldots$ then
 you can reproduce $\alpha_n$ for any $n \geq 1$.
-\end{Lem}
+\end{lemma}
 \begin{proof} By induction on $n$. It is obvious that we
 have $\alpha_1$ from $\mu_1, \mu_2, \mu_3, \ldots $ once, by
 definition, $\alpha_1 = \mu_1$. Suppose we have how to reproduce
@@ -274,7 +274,7 @@ as can be seen on the Figure below, we can apply the induction
 hypothesis on the internal $n-1$ strands of the curl and then apply
 the $\mu_n$, thus obtaining $\alpha_n$.
 \begin{center}
-\includegraphics[width=12cm]{fig/munimpliesalphanproof.eps}
+\psfig{file=fig/munimpliesalphanproof.eps,width=12cm}
 \end{center}
 \end{proof}
 
@@ -291,7 +291,7 @@ the schema on Figure \ref{fig:MuNLinha}.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=10cm]{fig/MuNLinha.eps}
+      \psfig{file=fig/MuNLinha.eps,width=10cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{The axiom $\mu'_n$ ($n \geq 2$) : ``better'' blink translation than $\mu_n$}
@@ -300,9 +300,9 @@ the schema on Figure \ref{fig:MuNLinha}.
 
 \newpage
 
-\begin{Prop} (Regular isotopy and $\mu'_n$) $\Rightarrow
+\begin{proposition} (Regular isotopy and $\mu'_n$) $\Rightarrow
 \mu_n,\,\,\,$ for $n\geq 1$.
-\end{Prop}
+\end{proposition}
 \begin{proof}
 For $n=1$ it is obvious because $\mu_1=\mu_1'$. The figure below
 shows the proof for $n=2$. Beginning with the right side of $\mu_2$
@@ -314,7 +314,7 @@ these transformations are both ways, we have proved the case for
 $n=2$. The proof for $n>2$ is analogous to the $n=2$ case and will
 not be shown.
 \begin{center}
-\includegraphics[width=13cm]{fig/MuNLinhaImpliesMuNProof.eps}
+\psfig{file=fig/MuNLinhaImpliesMuNProof.eps,width=13cm}
 \end{center}
 \vspace{-1cm}
 \end{proof}
@@ -332,17 +332,17 @@ The translation from $\K$ into $\B$ is depicted in Figure~\ref{fig:translationBF
 \begin{footnotesize}
 \begin{tabular}{|c|c|} \hline
 \rule{0cm}{2.7cm}
-\includegraphics[width=5cm]{fig/translationK0.eps} &
-\includegraphics[width=5cm]{fig/translationRibbonMove.eps} \\
+\psfig{file=fig/translationK0.eps,width=5cm} &
+\psfig{file=fig/translationRibbonMove.eps,width=5cm} \\
 Translation of $K_0$ into $B_0$ &
 Translation of the ribbon move $K_1$ into $B_1$ \\ \hline
 \rule{0cm}{2.7cm}
-\includegraphics[width=5cm]{fig/translationK2.eps} &
-\includegraphics[width=5cm]{fig/translationK3.eps} \\
+\psfig{file=fig/translationK2.eps,width=5cm} &
+\psfig{file=fig/translationK3.eps,width=5cm} \\
 Translation of $K_2$ into $B_2$ &
 Translation of $K_3$ into $B_3$ \\ \hline
 \multicolumn{2}{|c|}{
-      \rule{0cm}{7.4cm} \includegraphics[width=9cm]{fig/MuNLinhaTranslation2.eps}
+      \rule{0cm}{7.4cm} \psfig{file=fig/MuNLinhaTranslation2.eps,width=9cm}
 } \\
 \multicolumn{2}{|c|}{
       Translation of $\mu'_1, \ldots, \mu'_5, \ldots$,
@@ -393,7 +393,7 @@ $G_B$ (Figure \ref{fig:gblinkFromBlinkElements}D).
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics{fig/gBlinkFromBlinkElements.eps}\\
+      \psfig{file=fig/gBlinkFromBlinkElements.eps}\\
    \end{center}
    \vspace{-0.7cm}
   \caption{Elements on the definition of a g-blink from a blink}
@@ -418,7 +418,7 @@ vertex-edge, face-edge, angle-edge and zigzag-edge respectively.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=14cm]{fig/Blink2GBlinkExample.eps}\\
+      \psfig{file=fig/Blink2GBlinkExample.eps,width=14cm}\\
    \end{center}
    \vspace{-0.7cm}
   \caption{Blink, g-blink and attributes: an example}
@@ -457,34 +457,34 @@ following six conditions:
 \setlength{\parskip}{-2pt} \sl
 
 
-\item[(1)] Its vertices are partitioned in $V_0$ and $V_1$ (white and black
+\item Its vertices are partitioned in $V_0$ and $V_1$ (white and black
 vertices of Figures \ref{fig:gblinkFromBlinkElements} and
 \ref{fig:Blink2GBlinkExample});
 
-\item[(2)] vertices in $V_0$ are adjacent by face-edge, vertex-edge and
+\item vertices in $V_0$ are adjacent by face-edge, vertex-edge and
 angle-edge to vertices in $V_1$ and by zigzag-edges to vertices in
 $V_0$; vertices in $V_1$ are adjacent by face-edge, vertex-edge and
 angle-edge to vertices in $V_0$ and by zigzag-edges to vertices in
 $V_1$;
 
-\item[(3)] each vertex is incident to exactly one face-edge, one
+\item each vertex is incident to exactly one face-edge, one
 vertex-edge, one angle-edge and one zigzag-edge;
 
-\item[(4)] each polygon of alternating face-edge and vertex-edge has
+\item each polygon of alternating face-edge and vertex-edge has
 4 edges (is a g-edge) and is assigned color red or green
 (see the g-edges on Figure~\ref{fig:Blink2GBlinkExample}L) or,
 equivalently, a pair of zigzag edges of the same g-edge is labeled
 one edge as {\it overcrossing} and the other edge as {\it
 undercrossing};
 
-\item[(5)] the zigzag-edges are the diagonals of the g-edges connecting
+\item the zigzag-edges are the diagonals of the g-edges connecting
 the vertices with the same parity. Observe that this implies that
 zigzag-edges are redundant when we know the g-edges. They may be
 omitted when presenting a g-blink and calculated or shown when
 needed. For example Figure~\ref{fig:Blink2GBlinkExample}L can be
 easily restored from Figure~\ref{fig:gBlinkWithoutZigzags};
 
-\item[(6)] the 3-regular graph obtained by not considering the zigzag
+\item the 3-regular graph obtained by not considering the zigzag
 edges is a planar graph (see Figure \ref{fig:gBlinkWithoutZigzags}).
 
 \end{enumerate}
@@ -493,7 +493,7 @@ edges is a planar graph (see Figure \ref{fig:gBlinkWithoutZigzags}).
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=6cm]{fig/gBlinkWithoutZigzags.eps}\\
+      \psfig{file=fig/gBlinkWithoutZigzags.eps,width=6cm}\\
    \end{center}
    \vspace{-0.7cm}
   \caption{g-blink of Figure \ref{fig:Blink2GBlinkExample}L without zigzag-edges: a planar graph}
@@ -533,7 +533,7 @@ is the neighbor of who, their curve shape is not important).
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=12cm]{fig/DifferentBlinksSameGBlink.eps}\\
+      \psfig{file=fig/DifferentBlinksSameGBlink.eps,width=12cm}\\
    \end{center}
    \vspace{-0.7cm}
   \caption{Different blinks with the same g-blink}
@@ -575,7 +575,7 @@ the sphere.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=11cm]{fig/SphereIsotopy.eps}
+      \psfig{file=fig/SphereIsotopy.eps,width=11cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Isotopy on the sphere $\IS^2$}
@@ -593,12 +593,12 @@ Figure~\ref{fig:DifferentBlinksSameGBlink}D induce the same space.
 
 \pagebreak
 
-\begin{Lem}[Blink Jumping Rope Lemma] \label{lem:BlinkJumpingRopeLemma}
+\begin{lemma}[Blink Jumping Rope Lemma] \label{lem:BlinkJumpingRopeLemma}
 The (meta-)blinks shown below induce the same space.
     \begin{center}
-        \includegraphics[width=5cm]{fig/BlinkJumpingRopeLemma.eps}
+        \psfig{file=fig/BlinkJumpingRopeLemma.eps,width=5cm}
     \end{center}
-\end{Lem}
+\end{lemma}
 \begin{proof} Follow the figure below. First we show the BFL
 associated with the left blink (the crossing correspondent to red
 edge). Then we apply the Jumping Rope Lemma
@@ -606,7 +606,7 @@ edge). Then we apply the Jumping Rope Lemma
 our target blink. As our moves preserve the space, we have the
 result.
     \begin{center}
-        \includegraphics[width=14cm]{fig/BlinkJumpingRopeLemmaProof.eps}
+        \psfig{file=fig/BlinkJumpingRopeLemmaProof.eps,width=14cm}
     \end{center}
 \vspace{-1cm}
 \end{proof}
@@ -690,7 +690,7 @@ to $v$ by a vertex-edge then $s_a=+1$
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=8cm]{fig/linkingMatrix.eps}
+      \psfig{file=fig/linkingMatrix.eps,width=8cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{ Signs of a g-edge $a$ for the linking matrix}
@@ -773,7 +773,7 @@ $$ \theta(a,b,c) = \left\{%
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics{fig/qialphabeta.eps}
+      \psfig{file=fig/qialphabeta.eps}
    \end{center}
    \caption{ Elements for the quantum invariant}
    \label{fig:qialphabeta}
@@ -840,7 +840,7 @@ verdes pendentes saindo de dois vértices diferentes. Em
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      %\includegraphics{fig/blinkgraphlbl.\jpgext}
+      %\psfig{file=fig/blinkgraphlbl.\jpgext}
 
 \begin{footnotesize}
 \begin{tabular}{|rrclr|} \hline
@@ -884,19 +884,19 @@ verdes pendentes saindo de dois vértices diferentes. Em
    \label{fig:qinvariante}
 \end{figure}
 \begin{comment}
-{\color{red} Estende os QIs para blinks desconexos.}
+{\bf Estende os QIs para blinks desconexos.}
 
 \end{comment}
 
 By playing with computation of the quantum invariants from various
 blinks we discovered a rather peculiar space.
-\begin{Conj}
+\begin{conjecture}
 The quantum invariants
 of the space induced by the blink of Figure~\ref{fig:strange} are:
 $q_r = \frac{2}{3}\,r$ if $r \equiv 0$ mod $3$, $q_r =
 \frac{1}{3}\,(r+1)$ if $r \equiv 2$ mod $3$, $q_r =
 \frac{1}{3}\,(r-1)$ if $r \equiv 1$ mod $3$.
-\end{Conj}
+\end{conjecture}
 We have checked this
 result to a precision of 10 decimal places and up to $r=45$. The
 fact that the quantum invariants are real is evident since the blink
@@ -906,7 +906,7 @@ and that every integer appears is rather pleasing.
     %\vspace{0.5cm}
     \begin{figure}[h!]
         \begin{center}
-            \includegraphics[width=4cm]{fig/strange.eps}
+            \psfig{file=fig/strange.eps,width=4cm}
         \end{center}
         \caption{A peculiar space: its quantum invariants are integers and every integer appears}
         \label{fig:strange}
@@ -929,27 +929,30 @@ Let $G$ be a g-blink. One of the ingredients to define this
 ``code'' is the \GBlinkLabel\ algorithm that labels the vertices of
 a g-blink from an initial vertex $v$ (this initial vertex will be
 labeled~1).
-\begin{algorithm}
-\begin{small}
-\caption{$\GBlinkLabel(G,v)$}
-\label{alg:maplabel}
-\begin{algorithmic}[1]
- \State $S \leftarrow$ empty stack; $i \leftarrow 1$; $\forall u, L_u \leftarrow
- \bot$ \Comment{$\bot$ = not defined}
- \State push $v$ into $S$
- \While{$S$ not empty}
-    \State $a \leftarrow$ pop $S$
-    \If{$L_a = \bot$}
-       \State $b \leftarrow {\rm adj}_f(a)$; $c \leftarrow {\rm adj}_v(b)$; $d \leftarrow {\rm adj}_v(a)$
-       \State $L_a \leftarrow i; L_b \leftarrow i+1; L_c \leftarrow i+2; L_d \leftarrow i+3$
-       \State push ${\rm adj}_a(b)$ into $S$; push ${\rm adj}_a(d)$ into $S$
-       \State $i \leftarrow i+4$
-    \EndIf
- \EndWhile
- \State {\bf return} $L$
-\end{algorithmic}
-\end{small}
-\end{algorithm}
+
+\TODO{Bring back $GBlinkLabel(G,v)$ algorithm}
+
+%% \begin{algorithm}
+%% \begin{small}
+%% \caption{$\GBlinkLabel(G,v)$}
+%% \label{alg:maplabel}
+%% \begin{algorithmic}[1]
+%%  \State $S \leftarrow$ empty stack; $i \leftarrow 1$; $\forall u, L_u \leftarrow
+%%  \bot$ \Comment{$\bot$ = not defined}
+%%  \State push $v$ into $S$
+%%  \While{$S$ not empty}
+%%     \State $a \leftarrow$ pop $S$
+%%     \If{$L_a = \bot$}
+%%        \State $b \leftarrow {\rm adj}_f(a)$; $c \leftarrow {\rm adj}_v(b)$; $d \leftarrow {\rm adj}_v(a)$
+%%        \State $L_a \leftarrow i; L_b \leftarrow i+1; L_c \leftarrow i+2; L_d \leftarrow i+3$
+%%        \State push ${\rm adj}_a(b)$ into $S$; push ${\rm adj}_a(d)$ into $S$
+%%        \State $i \leftarrow i+4$
+%%     \EndIf
+%%  \EndWhile
+%%  \State {\bf return} $L$
+%% \end{algorithmic}
+%% \end{small}
+%% \end{algorithm}
 
 When we talk about a {\em labeling of a g-blink or of a blink}, we
 are referring to a labeling of the vertices of the g-blink given by
@@ -987,7 +990,7 @@ labeling, we denote by $\pack(L)$ the packed representation of $L$.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics{fig/gBlinkLabeling.eps}
+      \psfig{file=fig/gBlinkLabeling.eps}
    \end{center}
    \vspace{-0.7cm}
    \caption{ blink $B$, g-blink $G_B$ and labeling $\textsc{GBlinkLabel}(G_B,v)$}
@@ -1061,10 +1064,10 @@ satisfy $G_1 \preceq G_2$.
 
 
 \begin{comment}
-\begin{proposicao}
+\begin{proposition}
 Sejam $B_1$ e $B_2$ dois blinks. Se $\kappa(B_1) = \kappa(B_2)$
 então as 3-variedades induzidas por $B_1$ e $B_2$ são iguais.
-\end{proposicao}
+\end{proposition}
 \end{comment}
 
 \newpage
@@ -1122,7 +1125,7 @@ that crosses a green edge is itself a green edge).
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=10cm]{fig/blinkWith8Operations.eps}
+      \psfig{file=fig/blinkWith8Operations.eps,width=10cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{The effect on blinks of applying all combinations of (C), (P)
@@ -1143,10 +1146,10 @@ proposition shows.
 
 \newpage
 
-\begin{Prop}\label{prop:dualGblink}
+\begin{proposition}\label{prop:dualGblink}
 The spaces induced by g-blinks $G$, \textsc{Reflection($G$)},
 \textsc{RefDual($G$)} and \textsc{Dual($G$)} are the same.
-\end{Prop}
+\end{proposition}
 
 \vspace{-0.5cm}
 
@@ -1166,7 +1169,7 @@ $G \Sequiv \textsc{Dual}(G)$.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=13cm]{fig/dualGBlinksInduceSameSpace.eps}
+      \psfig{file=fig/dualGBlinksInduceSameSpace.eps,width=13cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Dual g-blinks induce the same space}
@@ -1216,34 +1219,34 @@ orientation that is changed.
 \begin{tabular}{|ccc|} \hline
 \multicolumn{3}{|c|}{\textsc{Dual($G$)}} \\
 g-blink & blink & BFL \\ \hline
-\multicolumn{1}{|p{4.5cm}|}{\protect \centering change parity (P) and swap face-edges and vertex-edges (FV) \\[0.3cm] \includegraphics{fig/smallGBlinkDual.eps}} &
+\multicolumn{1}{|p{4.5cm}|}{\protect \centering change parity (P) and swap face-edges and vertex-edges (FV) \\[0.3cm] \psfig{file=fig/smallGBlinkDual.eps}} &
 \multicolumn{1}{|p{4.5cm}|}{\protect \centering each face becomes a
 vertex, each
-edge becomes a dual edge with different color \\[0.3cm] \includegraphics{fig/smallBlinkDual.eps}} &
-\multicolumn{1}{|p{4.5cm}|}{\protect \centering overpass one external edge \\[0.3cm] \includegraphics{fig/smallBFLDual.eps}} \\ \hline
+edge becomes a dual edge with different color \\[0.3cm] \psfig{file=fig/smallBlinkDual.eps}} &
+\multicolumn{1}{|p{4.5cm}|}{\protect \centering overpass one external edge \\[0.3cm] \psfig{file=fig/smallBFLDual.eps}} \\ \hline
 \multicolumn{3}{|c|}{\textsc{Reflection($G$)}} \\[0.1cm]
 g-blink & blink & BFL \\ \hline \multicolumn{1}{|p{4.5cm}|}{\protect
 \centering change parity (P) and change overcross and undercross
 status on zigzag-edges (C) \\[0.3cm]
-\includegraphics{fig/smallGBlinkReflection.eps}}  &
+\psfig{file=fig/smallGBlinkReflection.eps}}  &
 \multicolumn{1}{|p{4.5cm}|}{\protect \centering
-reflect \\[0.3cm] \includegraphics{fig/smallBlinkReflection.eps}} &
+reflect \\[0.3cm] \psfig{file=fig/smallBlinkReflection.eps}} &
 \multicolumn{1}{|p{4.5cm}|}{\protect \centering
 reflect and change the crossings  \\[0.3cm]
-\includegraphics{fig/smallBFLReflection.eps}} \\ \hline
+\psfig{file=fig/smallBFLReflection.eps}} \\ \hline
 \multicolumn{3}{|c|}{\textsc{RefDual($G$)}} \\
 g-blink & blink & BFL \\ \hline \multicolumn{1}{|p{4.5cm}|}{\protect
 \centering change overcross and undercross
 status on zigzag-edges (C) and swap face-edges and vertex-edges (FV) \\[0.3cm]
-\includegraphics{fig/smallGBlinkRefDual.eps}} &
+\psfig{file=fig/smallGBlinkRefDual.eps}} &
 \multicolumn{1}{|p{4.5cm}|}{\protect \centering first make each face
 become a vertex and each
 edge become a dual edge with the color changed, then reflect
 the result \\[0.3cm]
-\includegraphics{fig/smallBlinkRefDual.eps}} &
+\psfig{file=fig/smallBlinkRefDual.eps}} &
 \multicolumn{1}{|p{4.5cm}|}{\protect \centering overpass one
 external edge, reflect and change the crossings \\[0.2cm]
-\includegraphics{fig/smallBFLRefDual.eps}} \\[0.3cm] \hline
+\psfig{file=fig/smallBFLRefDual.eps}} \\[0.3cm] \hline
 \end{tabular} \bigskip \medskip}}
 
 One important consequence of the properties we described here is that we
@@ -1272,7 +1275,7 @@ See Figure~\ref{fig:merging} for an example.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=14cm]{fig/merging.eps}
+      \psfig{file=fig/merging.eps,width=14cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Merging of $A$ and $B$ on {\it basepair} $(a,b)$}
@@ -1290,16 +1293,16 @@ by two new edges incident to same vertices of $e$ and $e'$ obtaining
 two disconnected g-blinks. For an example see Figure~\ref{fig:merging}
 from right to left.
 
-\begin{Theo}[Theorem on partial dual]
+\begin{theorem}[Theorem on partial dual]
 \label{theo:partialDual} Let $A$ and $B$ be arbitrary disjoint
 g-blinks and $(a,b)$ a basepair on them. Then
  $A[a] + B[b] \Sequiv A[a] + \textsc{Dual}(B)[b]$.
-\end{Theo}
+\end{theorem}
 In the language of BFLs the diagrammatic reformulation of Theorem
 \ref{theo:partialDual} is given by the diagram below. Note that
 $\alpha$ and $\beta$ are the ends of $a$ and $\gamma$ and $\delta$
 are the ends of $b$.
-$$\includegraphics[width=5cm]{fig/partialDual.eps}$$ The right
+$$\psfig{file=fig/partialDual.eps,width=5cm}$$ The right
 diagram above is obtained by cutting the two wires $\pi$-rotating
 $B$ and reconnecting the wires. (Note that the smiling fellow has
 only the right rear.) Theorem~\ref{theo:partialDual} was suggested by
@@ -1309,18 +1312,18 @@ Its proof, however, was elusive until October 31, 2006: it has to
 wait for the proofs of Theorems \ref{theo:partialReflection} and
 \ref{theo:partialRefDual}.
 
-\begin{Theo} [Theorem on partial reflection] \label{theo:partialReflection}
+\begin{theorem} [Theorem on partial reflection] \label{theo:partialReflection}
 Let $A$ and $B$ be arbitrary disjoint g-blinks, $(a,b)$ a basepair
 on them. Then $\, A[a] + B[b] \Sequiv A[a] +
 \textsc{Reflection}(B)[b].$
-\end{Theo}
+\end{theorem}
 
 In the language of blinks the diagrammatic reformulation of Theorem
 \ref{theo:partialReflection} is on the left part of the diagram
 below. The right part of it is the reformulation of the same Theorem
 in BFL language. Note that the right ear becomes a left ear
 indicating a $B$-reflection.
-$$\includegraphics[width=10cm]{fig/partialReflection.eps}$$
+$$\psfig{file=fig/partialReflection.eps,width=10cm}$$
 Theorem \ref{theo:partialReflection} is proved by topological
 techniques allied to crucial facts on the theory of gems. It is done
 in Chapter 4. The proof of Theorem \ref{theo:partialReflection} is
@@ -1329,7 +1332,7 @@ the main theoretical contribution of this thesis.
 The diagrammatic reformulation of Theorem
 \ref{theo:partialRefDual} in the language of BFLs is the passage
 from the first to the third diagram below
-$$\includegraphics[width=8cm]{fig/partialRefDual.eps}$$ The third
+$$\psfig{file=fig/partialRefDual.eps,width=8cm}$$ The third
 diagram above is obtained by a $3D$-flip on $B$ (getting the central
 diagram) followed by a ribbon move, regular isotopies and Whitney
 trick. The smiling to frowning change is to indicate that all the
@@ -1338,11 +1341,11 @@ put upside down and being retracted from the ear). On the contrary
 of the previous Theorems we can tackle the proof of Theorem
 \ref{theo:partialRefDual} immediately.
 
-\begin{Theo}[Theorem on partial refDual]
+\begin{theorem}[Theorem on partial refDual]
 \label{theo:partialRefDual} Let $A$ and
 $B$ be arbitrary disjoint g-blinks, $(a,b)$ a basepair on them. Then
 $A[a] + B[b] \Sequiv A[a] + \textsc{RefDual}(B)[b].$
-\end{Theo}
+\end{theorem}
 
 \begin{proof}
 The proof is easy with the help of the BFL manifestation of the
@@ -1360,7 +1363,7 @@ cancel each other.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=8cm]{fig/smilingFrowningFellow2.eps}
+      \psfig{file=fig/smilingFrowningFellow2.eps,width=8cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{BFLs induce same space because are the same link with the same
@@ -1368,19 +1371,19 @@ cancel each other.
    \label{fig:smilingFrowningFellow2}
 \end{figure}
 
-\begin{Lem} For any g-blink $B$,
+\begin{lemma} For any g-blink $B$,
 $$\textsc{Dual(Reflection}(B))=\textsc{Reflection}(\textsc{Dual}(B)).$$
-\end{Lem}
+\end{lemma}
 \begin{proof} By their combinatorial definitions in g-blinks
 the operations of taking the dual and reflecting are seen to be
 commuting involutions. Thus, both spaces in the statement of the
 lemma are equal to $\textsc{RefDual}(B))$.
 \end{proof}
 
-\begin{Lem} \label{lem:23implies1}
+\begin{lemma} \label{lem:23implies1}
 Theorem \ref{theo:partialDual} is implied by Theorems
 \ref{theo:partialReflection} and \ref{theo:partialRefDual}.
-\end{Lem}
+\end{lemma}
 \begin{proof}
 $A[a] + B[b] \Sequiv A[a] + \textsc{Reflection}(B)[b]$ and $A[a] +
 B[b] \Sequiv A[a] + \textsc{RefDual}(B)[b]$ imply by transitivity
@@ -1430,7 +1433,7 @@ the final blocks are always the same.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=14cm]{fig/breakpoint.eps}
+      \psfig{file=fig/breakpoint.eps,width=14cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Breakpoints of a g-blink and its breaking}
@@ -1441,22 +1444,22 @@ Some important properties of a breakpair that we need are related to
 the g-zigzags of its g-blink. They are the subject of next two
 propositions.
 
-\begin{Prop}
+\begin{proposition}
 If $p$ is a breakpair on g-blink $G$ and its angle-edges are $e_1$
 and $e_2$ then the g-zigzag of $G$ that contains $e_1$ is the same
 as the one that contains $e_2$.
-\end{Prop}
+\end{proposition}
 \begin{proof} Straightforward. \end{proof}
 
 
-\begin{Prop}
+\begin{proposition}
 \label{prop:breakpairDisjointGZigzags}
  The only g-zigzag $z$ affected by separating a g-blink $G$ on
 a breakpair $p$ is the one that contains both angle-edges of
 $p$. If $P_1$ and $P_2$ are the pieces obtained by separating $G$ on
 $p$ then the g-zigzags of $P_1$ and $P_2$, except for $z$, were
 disjoint in $G$.
-\end{Prop}
+\end{proposition}
 \begin{proof} Straightforward. \end{proof}
 
 We also saw on Section~\ref{sec:mergingGBlinks} that any pair of angle
@@ -1471,7 +1474,7 @@ connecting the two g-blinks and respecting the parity.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=14cm]{fig/mergingWithDual.eps}
+      \psfig{file=fig/mergingWithDual.eps,width=14cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Merging A with B and with \textsc{Dual}(B)}
@@ -1491,14 +1494,14 @@ Theorem \ref{theo:partialDual}. The basepair in both rows are the
 same: the pair of edges labeled~1. The theorem together with the result
 we describe now form the basis of the normalization procedure.
 
-\begin{Prop} \label{prop:sameZigzagsSameSpace}
+\begin{proposition} \label{prop:sameZigzagsSameSpace}
 Let $A$ and $B$ be two g-blinks. Let $p$ be a basepair on them. Let $\alpha$
 be the g-zigzag of the angle-edge of $p$ on $A$ and $\beta$ be the
 g-zigzag of the angle-edge of $p$ on $B$. Let $p'$ be any other
 basepair on g-zigzags $\alpha$ of $A$ and $\beta$ of $B$. The result
 of $A$ and $B$ merged on $p$ induces the same space as $A$ and $B$
 merged on $p'$.
-\end{Prop}
+\end{proposition}
 
 For example, the g-blink resultant of the merge of
 Figure~\ref{fig:mergingOnAnyAngleEdge}A on basepair labeled 1
@@ -1512,7 +1515,7 @@ Figure~\ref{fig:mergingOnAnyAngleEdge}A.
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=12cm]{fig/mergingOnAnyAngleEdge.eps}
+      \psfig{file=fig/mergingOnAnyAngleEdge.eps,width=12cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Merging on any angle-edge of the same g-zigzags}
@@ -1591,6 +1594,7 @@ $u$ is a matter of sorting $w_1,\ldots,w_k$ using the
 \textsc{CompareTrees} function. With these explanations the problem
 of organizing $X$ is solved. This also ends the intermediate phase.
 % define the command: \CompareTreesAlgorithm
+
 \newcommand{\CompareTreesAlgorithm}{
 \parbox[t]{8cm}{
 \begin{small}
@@ -1616,6 +1620,7 @@ of organizing $X$ is solved. This also ends the intermediate phase.
  \EndFunction
 \end{algorithmic}
 \end{small}}}
+
 % define the command: \LinearizeTreeAlgorithm
 \newcommand{\LinearizeTreeAlgorithm}{
 \parbox[t]{7.5cm} {
@@ -1636,23 +1641,25 @@ of organizing $X$ is solved. This also ends the intermediate phase.
 \end{algorithmic}
 \end{small}}}
 
-\begin{algorithm}
-\caption{\textsc{CompareTrees} Algorithm}
-\label{alg:compareTrees}
-\begin{center}
-\CompareTreesAlgorithm \hspace{0.1cm} \LinearizeTreeAlgorithm
+%% \begin{algorithm}
+%% \caption{\textsc{CompareTrees} Algorithm}
+%% \label{alg:compareTrees}
+%% \begin{center}
+%% \CompareTreesAlgorithm \hspace{0.1cm} \LinearizeTreeAlgorithm
+%% \end{algorithm}
+%% \bigskip
+%% \parbox{12cm}{
+%% \begin{small}
+%% In this algorithm the code $\kappa$ is taken over not only g-blinks
+%% but also on zigzag labels. Consider the code of a zigzag label the
+%% empty word. With this definition two zigzag labels $z_1$ and $z_2$
+%% always satisfy $\kappa(z_1) = \kappa(z_2)$. Note also that a zigzag
+%% node code is smaller than any g-blink code.\end{small}}
+%% \end{center}
+%% \end{algorithm}
 
-\bigskip
+\TODO{Bring back $CompareTrees(G,v)$ algorithm}
 
-\parbox{12cm}{
-\begin{small}
-In this algorithm the code $\kappa$ is taken over not only g-blinks
-but also on zigzag labels. Consider the code of a zigzag label the
-empty word. With this definition two zigzag labels $z_1$ and $z_2$
-always satisfy $\kappa(z_1) = \kappa(z_2)$. Note also that a zigzag
-node code is smaller than any g-blink code.\end{small}}
-\end{center}
-\end{algorithm}
 Merging phase. The rooted tree $X$ is already organized. The idea
 now is to merge the blocks using the order defined on $X$ and using
 the code to define a canonical basepair for each merging operation.
@@ -1690,7 +1697,7 @@ implemented for obtaining the representative of a g-blink (or blink).
 \begin{figure}[htp]
    \begin{center}
       \leavevmode
-      \includegraphics[width=12cm]{fig/dog.eps}
+      \psfig{file=fig/dog.eps,width=12cm}
    \end{center}
    \vspace{-0.7cm}
    \caption{Representative of the dog like blink}
